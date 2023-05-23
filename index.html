@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Boostrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .container {
+            padding: 24px 24px;
+        }
+
+        .card {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel  carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100 carousel-img" src="https://www.mundodeportivo.com/alfabeta/hero/2023/01/bulbasur_98.png?width=768&aspect_ratio=16:9&format=nowebp" />
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100 carousel-img" src="https://i.pinimg.com/originals/57/94/9f/57949f237a125bf1e8af7cf8cb9dfced.png" />
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100 carousel-img" src="https://media.thenerdstash.com/wp-content/uploads/2022/06/pokemon-go-how-to-get-shiny-squirtle.jpg" />
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header text-bg-success">
+                        Bulbassauro
+                    </header>
+                    <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/01/bulbasur_98.png?width=768&aspect_ratio=16:9&format=nowebp" />
+                    <div class="card-body">
+                        <h4 class="card-title">Tipo: Planta &#127807</h4>
+                        <p class="card-text">
+                            Esse é o Bulbassauro um dos 3 iniciais de pokemon
+                        </p>
+                        <a href="#" class="btn btn-success">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        #001
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header text-bg-danger">
+                        Charmander
+                    </header>
+                    <img src="https://i.pinimg.com/originals/57/94/9f/57949f237a125bf1e8af7cf8cb9dfced.png" />
+                    <div class="card-body">
+                        <h4 class="card-title">Tipo: Fogo &#128293</h4>
+                        <p class="card-text">
+                            Esse é o Charmander um dos 3 iniciais de pokemon
+                        </p>
+                        <a href="#" class="btn btn-danger">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        #004
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card ">
+                <header class="card-header text-bg-primary">
+                    Squirtle
+                </header>
+                <img src="https://media.thenerdstash.com/wp-content/uploads/2022/06/pokemon-go-how-to-get-shiny-squirtle.jpg" />
+                <div class="card-body">
+                    <h4 class="card-title">Tipo: Água &#127754</h4>
+                    <p class="card-text">
+                        Esse é o Squirtle um dos 3 iniciais de pokemon
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+                </div>
+                <footer class="card-footer">
+                    #007
+                </footer>
+            </article>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
